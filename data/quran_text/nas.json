@@ -1,0 +1,10 @@
+{
+  "surah_number": 114,
+  "name": "الناس",
+  "ayahs": [
+    { "number": 1, "text": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ", "audio_file": "001.wav" },
+    { "number": 2, "text": "مَلِكِ النَّاسِ", "audio_file": "002.wav" },
+    { "number": 3, "text": "إِلَٰهِ النَّاسِ", "audio_file": "003.wav" },
+    { "number": 4, "text": "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ", "audio_file": "004.wav" }
+  ]
+}
