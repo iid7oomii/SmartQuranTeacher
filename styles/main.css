@@ -1,0 +1,73 @@
+:root {
+    --black-bg: #0b0b0b;
+    --gold-main: #bf9b30;
+    --gold-light: #e6c35c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-bg);
+    font-family: serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* زخرفة علوية وسفلية */
+.container::before,
+.container::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--gold-main), transparent);
+}
+
+.container::before {
+    top: 30px;
+}
+
+.container::after {
+    bottom: 30px;
+}
+
+/* مكان الآيات */
+#ayah-container {
+    color: var(--gold-light);
+    font-size: 26px;
+    line-height: 2.2;
+    padding: 20px;
+}
+
+/* زر البدء */
+.start-btn {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 60px;
+    background: transparent;
+    color: var(--gold-main);
+    border: 2px solid var(--gold-main);
+    border-radius: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(191, 155, 48, 0.25);
+}
+
+.start-btn:active {
+    transform: translateX(-50%) scale(0.96);
+}
